@@ -2,7 +2,8 @@
   width: 320px;
   height: 320px;
   position: relative;
-  border: 5px red solid;
+  border: 20px silver solid;
+  box-shadow: 5px 5px 10px #000
 }
 
 
