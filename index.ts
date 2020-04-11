@@ -17,6 +17,12 @@ const black_bishop: string = "\u265D";
 const black_knight: string = "\u265E";
 const black_pawn: string = "\u265F";
 
+interface Casilla {
+  cordenada: Array<number>;
+  ficha: string;
+  color: string;
+  clase: string;
+}
 class Tablero {
   x: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8];
   y: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -239,13 +245,6 @@ class Tablero {
       this.fichaSeleccionada = false;
     }
   };
-}
-
-interface Casilla {
-  cordenada: Array<number>;
-  ficha: string;
-  color: string;
-  clase: string;
 }
 
 const ajedrez = new Tablero();
